@@ -1,0 +1,7 @@
+<DevicesRequest xmlns="http://lining.co.kr/devices/schemas">
+	<Date>
+		<StartDate>2013-10-01</StartDate>
+		<EndDate>2013-10-31</EndDate>
+	</Date>
+	<Type>*</Type>
+</DevicesRequest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://lining.co.kr/devices/schemas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DevicesRequest" type="sch:DevicesRequestType" xmlns:sch="http://lining.co.kr/devices/schemas"/>
+  <xs:complexType name="DateType">
+    <xs:sequence>
+      <xs:element type="xs:date" name="StartDate"/>
+      <xs:element type="xs:date" name="EndDate"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DevicesRequestType">
+    <xs:sequence>
+      <xs:element type="sch:DateType" name="Date" xmlns:sch="http://lining.co.kr/devices/schemas"/>
+      <xs:element type="xs:string" name="Type"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
